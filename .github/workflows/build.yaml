@@ -20,6 +20,6 @@ jobs:
     - name: Compile, build and push
       run: |
         mvn package
-        docker build --tag ghcr.io/DLMazk/petclinic:latest -f Dockerfile .
-        docker login --username DLMazk --password $GITHUB_ACCESSTOKEN ghcr.io 
-        docker push ghcr.io/DLMazk/petclinic:latest
+        docker build --tag ghcr.io/dlmazk/petclinic:latest -f Dockerfile .
+        docker login --username dlmazk --password $GITHUB_ACCESSTOKEN ghcr.io 
+        docker push ghcr.io/dlmazk/petclinic:latest
